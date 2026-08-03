@@ -213,8 +213,8 @@ button:focus-visible {
 }
 
 .nav__logo-img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 .nav__links {
@@ -479,63 +479,29 @@ button:focus-visible {
   text-align: center;
 }
 
-.download__grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 48px;
-}
-
-.store-badge {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  justify-content: center;
-  padding: 16px 26px;
-  border: 1px solid var(--border-strong);
-  border-radius: var(--radius-md);
-  background: var(--black);
-  transition: background 0.2s var(--ease), border-color 0.2s var(--ease), transform 0.18s var(--ease);
-}
-
-.store-badge:hover {
-  background: var(--bg-raised-2);
-  border-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-2px);
-}
-
-.store-badge svg {
-  width: 30px;
-  height: 30px;
-  color: var(--white);
-  flex-shrink: 0;
-}
-
-.store-badge__logo {
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-}
-
-.store-badge__text {
+.download__cta {
+  margin-top: 44px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
-  line-height: 1.2;
+  align-items: center;
+  gap: 18px;
 }
 
-.store-badge__eyebrow {
-  font-size: 0.7rem;
-  letter-spacing: 0.03em;
+.download__override {
+  font-size: 0.9rem;
   color: var(--text-tertiary);
 }
 
-.store-badge__title {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--white);
-  letter-spacing: -0.01em;
+.download__override a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border-strong);
+  transition: color 0.2s var(--ease);
+}
+
+.download__override a:hover {
+  color: var(--text-primary);
 }
 
 /* ---------- Developer ---------- */
@@ -661,8 +627,8 @@ button:focus-visible {
 }
 
 .footer__logo-img {
-  width: 26px;
-  height: 26px;
+  width: 40px;
+  height: 40px;
 }
 
 .footer__links {
@@ -702,10 +668,6 @@ button:focus-visible {
 
   .why__text p {
     max-width: none;
-  }
-
-  .download__grid {
-    grid-template-columns: 1fr;
   }
 }
 
