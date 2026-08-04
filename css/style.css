@@ -480,6 +480,10 @@ button:focus-visible {
   align-items: center;
 }
 
+.mobile-break {
+  display: none;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -949,7 +953,26 @@ button:focus-visible {
   }
 
   .hero {
-    padding: 90px 0 64px;
+    padding: 100px 0 64px;
+    align-items: flex-start;
+  }
+
+  .hero__inner {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .mobile-break {
+    display: block;
+  }
+
+  .hero__headline,
+  .hero__subhead {
+    max-width: none;
+  }
+
+  .hero__ctas {
+    justify-content: flex-start;
   }
 
   .features,
