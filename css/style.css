@@ -459,6 +459,18 @@ button:focus-visible {
   display: none;
 }
 
+.desktop-break {
+  display: block;
+}
+
+.headline-desktop {
+  display: block;
+}
+
+.headline-mobile {
+  display: none;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -485,6 +497,11 @@ button:focus-visible {
   color: var(--text-secondary);
   max-width: 480px;
   line-height: 1.6;
+}
+
+.hero__subhead strong {
+  color: var(--text-primary);
+  font-weight: 600;
 }
 
 .hero__ctas {
@@ -933,9 +950,25 @@ button:focus-visible {
     display: block;
   }
 
+  .desktop-break {
+    display: none;
+  }
+
+  .headline-desktop {
+    display: none;
+  }
+
+  .headline-mobile {
+    display: block;
+  }
+
   .hero__headline,
   .hero__subhead {
     max-width: none;
+  }
+
+  .hero__headline {
+    font-size: 2.5rem;
   }
 
   .hero__ctas {
