@@ -62,6 +62,7 @@ body {
   overflow-x: hidden;
   max-width: 100%;
   position: relative;
+  padding-top: 69px;
 }
 
 /* ---------- Custom Cursor (desktop / fine-pointer devices only) ---------- */
@@ -249,6 +250,17 @@ button:focus-visible {
   border-color: var(--border-strong);
 }
 
+.btn--secondary {
+  background: var(--bg-raised);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+.btn--secondary:hover {
+  background: var(--bg-raised-2);
+  border-color: var(--border-strong);
+}
+
 .btn--ghost:hover {
   background: var(--bg-raised-2);
   border-color: rgba(255, 255, 255, 0.28);
@@ -310,10 +322,19 @@ button:focus-visible {
   }
 }
 
+.features,
+.why,
+.download,
+.developer {
+  scroll-margin-top: 69px;
+}
+
 /* ---------- Nav ---------- */
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   background: rgba(13, 13, 13, 0.75);
   backdrop-filter: blur(10px);
@@ -698,7 +719,7 @@ button:focus-visible {
 
 /* ---------- Developer ---------- */
 .developer {
-  padding: 140px 0;
+  padding: 140px 0 70px;
 }
 
 .developer__inner {
@@ -798,7 +819,7 @@ button:focus-visible {
 
 /* ---------- Supported By ---------- */
 .sponsors {
-  padding: 70px 0 90px;
+  padding: 40px 0 90px;
   text-align: center;
 }
 
@@ -970,6 +991,10 @@ button:focus-visible {
 }
 
 @media (max-width: 720px) {
+  .footer {
+    border-top: 1px solid var(--border);
+  }
+
   .nav__links {
     position: fixed;
     top: 0;
