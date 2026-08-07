@@ -923,7 +923,7 @@ button:focus-visible {
 .footer__social-icon-img {
   width: 16px;
   height: 16px;
-  opacity: 0.85;
+  opacity: 0.62;
   transition: opacity 0.2s var(--ease);
 }
 
