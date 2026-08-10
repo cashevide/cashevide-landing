@@ -4,7 +4,7 @@
    ========================================================= */
 
 /* ---------- Font: Geist (self-hosted via CDN fallback to system) ---------- */
-@import url('https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css');
+@import url("https://cdn.jsdelivr.net/npm/geist@1.3.1/dist/fonts/geist-sans/style.css");
 
 /* ---------- Design Tokens ---------- */
 :root {
@@ -23,7 +23,8 @@
   --black: #0d0d0d;
 
   /* Type */
-  --font-sans: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-sans:
+    "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   /* Layout */
   --container-w: 1120px;
@@ -88,7 +89,10 @@ body {
   pointer-events: none;
   z-index: 10000;
   transform: translate(-50%, -50%);
-  transition: width 0.2s var(--ease), height 0.2s var(--ease), opacity 0.2s var(--ease);
+  transition:
+    width 0.2s var(--ease),
+    height 0.2s var(--ease),
+    opacity 0.2s var(--ease);
   opacity: 0;
   mix-blend-mode: difference;
 }
@@ -110,7 +114,7 @@ body {
 
 /* Subtle grain texture overlay, generated via SVG turbulence (no images/libraries) */
 body::before {
-  content: '';
+  content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -229,7 +233,11 @@ button:focus-visible {
   font-size: 0.875rem;
   font-weight: 500;
   white-space: nowrap;
-  transition: background 0.2s var(--ease), border-color 0.2s var(--ease), transform 0.15s var(--ease), opacity 0.2s var(--ease);
+  transition:
+    background 0.2s var(--ease),
+    border-color 0.2s var(--ease),
+    transform 0.15s var(--ease),
+    opacity 0.2s var(--ease);
   border: 1px solid transparent;
 }
 
@@ -293,15 +301,25 @@ button:focus-visible {
   animation: fadeUp 0.7s var(--ease) forwards;
 }
 
-.hero__animate--1 { animation-delay: 0.05s; }
-.hero__animate--2 { animation-delay: 0.15s; }
-.hero__animate--3 { animation-delay: 0.25s; }
-.hero__animate--4 { animation-delay: 0.35s; }
+.hero__animate--1 {
+  animation-delay: 0.05s;
+}
+.hero__animate--2 {
+  animation-delay: 0.15s;
+}
+.hero__animate--3 {
+  animation-delay: 0.25s;
+}
+.hero__animate--4 {
+  animation-delay: 0.35s;
+}
 
 .reveal {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+  transition:
+    opacity 0.6s var(--ease),
+    transform 0.6s var(--ease);
 }
 
 .reveal.is-visible {
@@ -340,7 +358,9 @@ button:focus-visible {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
-  transition: background 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  transition:
+    background 0.3s var(--ease),
+    box-shadow 0.3s var(--ease);
 }
 
 .nav.is-scrolled {
@@ -382,7 +402,9 @@ button:focus-visible {
   font-size: 0.875rem;
   font-weight: 500;
   color: var(--text-secondary);
-  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+  transition:
+    background 0.2s var(--ease),
+    color 0.2s var(--ease);
 }
 
 .nav__login:hover {
@@ -430,7 +452,9 @@ button:focus-visible {
   width: 20px;
   height: 1.5px;
   background: var(--text-primary);
-  transition: transform 0.25s var(--ease), opacity 0.25s var(--ease);
+  transition:
+    transform 0.25s var(--ease),
+    opacity 0.25s var(--ease);
   margin-inline: auto;
 }
 
@@ -445,21 +469,26 @@ button:focus-visible {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -10%;
   left: 50%;
   translate: -50% 0;
   width: 900px;
   height: 500px;
-  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.06), transparent 70%);
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 255, 255, 0.06),
+    transparent 70%
+  );
   pointer-events: none;
   z-index: -1;
   animation: heroGlow 18s ease-in-out infinite;
 }
 
 @keyframes heroGlow {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
     transform: scale(1);
   }
@@ -561,7 +590,10 @@ button:focus-visible {
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   padding: 28px 24px;
-  transition: background 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.2s var(--ease);
+  transition:
+    background 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    transform 0.2s var(--ease);
 }
 
 .feature-card:hover {
@@ -665,7 +697,7 @@ button:focus-visible {
 }
 
 .compare-card li::before {
-  content: '–';
+  content: "–";
   position: absolute;
   left: 0;
   color: var(--text-tertiary);
@@ -676,7 +708,7 @@ button:focus-visible {
 }
 
 .compare-card--highlight li::before {
-  content: '✓';
+  content: "✓";
   color: var(--white);
 }
 
@@ -803,7 +835,10 @@ button:focus-visible {
   border-radius: var(--radius-full);
   border: 1px solid var(--border-strong);
   color: var(--text-secondary);
-  transition: background 0.2s var(--ease), color 0.2s var(--ease), border-color 0.2s var(--ease);
+  transition:
+    background 0.2s var(--ease),
+    color 0.2s var(--ease),
+    border-color 0.2s var(--ease);
 }
 
 .developer__socials a svg {
@@ -817,9 +852,30 @@ button:focus-visible {
   color: var(--text-primary);
 }
 
+/* ---------- Important Notice ---------- */
+.notice {
+  padding: 20px 0 90px;
+  text-align: center;
+}
+
+.notice__card {
+  max-width: 720px;
+  margin: 32px auto 0;
+  padding: 28px 32px;
+  border: 1px solid rgba(153, 27, 27, 0.55);
+  border-radius: var(--radius-lg);
+  text-align: left;
+}
+
+.notice__text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
 /* ---------- Supported By ---------- */
 .sponsors {
-  padding: 40px 0 90px;
+  padding: 40px 0 60px;
   text-align: center;
 }
 
@@ -995,6 +1051,10 @@ button:focus-visible {
     border-top: 1px solid var(--border);
   }
 
+  .notice__card {
+    padding: 22px 22px;
+  }
+
   .nav__links {
     position: fixed;
     top: 0;
@@ -1013,7 +1073,9 @@ button:focus-visible {
     transform: translateY(-8px);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 0.25s var(--ease), transform 0.25s var(--ease);
+    transition:
+      opacity 0.25s var(--ease),
+      transform 0.25s var(--ease);
   }
 
   .nav__links.is-open {
