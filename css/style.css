@@ -236,7 +236,7 @@ button:focus-visible {
 .btn--primary {
   background: var(--white);
   color: var(--black);
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .btn--primary:hover {
@@ -737,7 +737,6 @@ button:focus-visible {
   height: 88px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid var(--border-strong);
   background: var(--bg-raised-2);
 }
 
@@ -829,7 +828,7 @@ button:focus-visible {
   padding: 28px 32px;
   border: 1px solid rgba(153, 27, 27, 0.55);
   border-radius: var(--radius-lg);
-  text-align: left;
+  text-align: center;
 }
 
 .notice__title {
