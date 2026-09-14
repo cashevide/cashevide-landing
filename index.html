@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cashevide: Freelancing made transparent and simple.</title>
   <meta name="description"
-    content="Cashevide helps freelancers review clients on payment behavior and professionalism, and generate clean, professional invoices. Privacy-first and open source.">
+    content="Cashevide is a daily tool for freelancers to create invoices, track payments, and manage clients and products in one place. Privacy-first and open source.">
 
   <link rel="icon" type="image/png" href="assets/icons/favicon.png">
   <link rel="apple-touch-icon" href="assets/icons/favicon.png">
@@ -18,7 +18,7 @@
   <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
   <!-- ============ NAV ============ -->
-  <header class="nav" id="top">
+  <header class="nav">
     <div class="container nav__inner">
       <a href="#top" class="nav__logo">
         <img src="assets/images/logo.svg" alt="Cashevide" class="nav__logo-img">
@@ -45,7 +45,7 @@
   <main>
 
     <!-- ============ HERO ============ -->
-    <section class="hero">
+    <section class="hero" id="top">
       <div class="container hero__inner">
         <p class="eyebrow hero__animate hero__animate--1">Open Source · For Freelancers</p>
         <h1 class="hero__headline hero__animate hero__animate--2">
@@ -53,8 +53,8 @@
           <span class="headline-mobile">Freelancing made<br>transparent and<br>simple</span>
         </h1>
         <p class="hero__subhead hero__animate hero__animate--3">
-          Review clients, generate <strong>unlimited invoices</strong> for free,
-          and track payment reliability with total confidence.
+          Generate <strong>unlimited invoices</strong> for free, track every
+          payment, and manage your clients and products with total confidence.
         </p>
 
         <div class="hero__ctas hero__animate hero__animate--4">
@@ -85,9 +85,9 @@
                 <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
               </svg>
             </div>
-            <h3>Structured Reviews</h3>
-            <p>No free-text rants. Just clear, predefined tags (paid on time, payment delayed, good communication) so
-              review data stays consistent and fair.</p>
+            <h3>Payment Tracking Dashboard</h3>
+            <p>See who has paid, who has not, and what is overdue at a glance. Every invoice status updates
+              automatically so nothing slips through the cracks.</p>
           </div>
 
           <div class="feature-card">
@@ -110,8 +110,8 @@
               </svg>
             </div>
             <h3>Privacy by Design</h3>
-            <p>Client phone numbers are never stored in plain text. Cashevide matches clients using one-way hashing,
-              never exposing personal data.</p>
+            <p>Built on a secure Django backend with your data never shared with third parties.
+              What you track stays yours, kept private and secure.</p>
           </div>
 
           <div class="feature-card">
@@ -136,10 +136,10 @@
           <h2 class="section__title">Built on structure, not guesswork.</h2>
           <p>
             Freelancing usually means juggling scattered notes, memory, and gut
-            feeling to keep track of clients and payments. Cashevide takes a
-            different approach: structured categories instead of loose notes,
-            hashed identifiers to keep everything private, and a system built
-            to make reviewing, invoicing, and tracking effortless.
+            feeling to keep track of clients, products, and payments. Cashevide
+            takes a different approach: a single dashboard for your clients and
+            products, data kept private and secure, and a
+            system built to make invoicing and payment tracking effortless.
           </p>
         </div>
 
@@ -147,7 +147,7 @@
           <div class="compare-card">
             <p class="compare-card__label">The old way</p>
             <ul>
-              <li>Client history scattered across notes and memory</li>
+              <li>Client and product details scattered across notes and memory</li>
               <li>Invoices made manually, every single time</li>
               <li>No easy way to track who's paid and who hasn't</li>
             </ul>
@@ -155,9 +155,9 @@
           <div class="compare-card compare-card--highlight">
             <p class="compare-card__label">The Cashevide way</p>
             <ul>
-              <li>Structured, tag-based reviews in one place</li>
+              <li>All your clients and products organized in one place</li>
               <li>Unlimited invoices generated in seconds</li>
-              <li>Private, hashed, and built to keep your data safe</li>
+              <li>Private and secure, built to keep your data safe</li>
             </ul>
           </div>
         </div>
@@ -168,16 +168,10 @@
     <section class="download" id="download">
       <div class="container reveal">
         <h2 class="section__title">Get Cashevide</h2>
-        <p class="section__subtitle">Available on every platform you already use.</p>
+        <p class="section__subtitle">Works right in your browser, no installation needed.</p>
 
         <div class="download__cta">
-          <a href="#" class="btn btn--primary btn--lg" id="smartDownloadBtn">Sign up for free</a>
-          <p class="download__override">
-            or get it directly on
-            <a href="#" id="iosLink">iOS</a> ·
-            <a href="#" id="androidLink">Android</a> ·
-            <a href="#" id="webLink">Web</a>
-          </p>
+          <a href="https://app.cashevide.com" class="btn btn--primary btn--lg" id="smartDownloadBtn">Sign up for free</a>
         </div>
       </div>
     </section>
@@ -200,7 +194,7 @@
 
           <p class="developer__bio">
             I'm a graphic designer and developer. I built this platform to give
-            freelancers a simple way to keep track of clients, invoices, and
+            freelancers a simple daily tool to manage clients, products, invoices, and
             payments, all in one place. It's currently free for freelancers
             to use, with no paid features and no revenue for me. I'm hoping to keep it
             going with your support. If I add features for agencies and enterprises in

@@ -65,47 +65,21 @@
   }
 
   /* =========================================================
-     SMART DOWNLOAD REDIRECT
-     Detects OS and points the primary CTA + override links
-     to the right destination. Update the URLs below once
-     the real store/app links are available.
+     WEB APP CTA
+     Web-only product, so every CTA points straight to the
+     web app. Update the URL below if the real app link
+     changes.
      ========================================================= */
 
-  var DOWNLOAD_LINKS = {
-    ios: "https://apps.apple.com/app/cashevide", // TODO: replace with real App Store link
-    android: "https://play.google.com/store/apps/details?id=com.cashevide", // TODO: replace with real Play Store link
-    web: "https://app.cashevide.com", // TODO: replace with real web app link
-  };
-
-  function detectPlatform() {
-    var ua = navigator.userAgent || navigator.vendor || window.opera;
-
-    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-      return "ios";
-    }
-    if (/android/i.test(ua)) {
-      return "android";
-    }
-    return "web";
-  }
+  var WEB_APP_URL = "https://app.cashevide.com"; // TODO: confirm real web app link
 
   var smartBtn = document.getElementById("smartDownloadBtn");
   var navSmartBtn = document.getElementById("navSmartBtn");
   var heroSmartBtn = document.getElementById("heroSmartBtn");
-  var iosLink = document.getElementById("iosLink");
-  var androidLink = document.getElementById("androidLink");
-  var webLink = document.getElementById("webLink");
-
-  var platform = detectPlatform();
-  var targetUrl = DOWNLOAD_LINKS[platform];
 
   [smartBtn, navSmartBtn, heroSmartBtn].forEach(function (btn) {
-    if (btn) btn.href = targetUrl;
+    if (btn) btn.href = WEB_APP_URL;
   });
-
-  if (iosLink) iosLink.href = DOWNLOAD_LINKS.ios;
-  if (androidLink) androidLink.href = DOWNLOAD_LINKS.android;
-  if (webLink) webLink.href = DOWNLOAD_LINKS.web;
 
   /* =========================================================
      SCROLL-REVEAL ANIMATIONS
